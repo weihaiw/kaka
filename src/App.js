@@ -7,7 +7,7 @@ import News from './components/News.js'
 import My from './components/My.js'
 import Ren from './components/Ren.js'
 import {
-  BrowserRouter,
+  HashRouter,
   Route
 } from 'react-router-dom';
 import Suosou from './components/Suosou.js';
@@ -20,7 +20,7 @@ export default class App extends React.Component{
   }
   render(){
     return(
-      <BrowserRouter>
+      <HashRouter>
         <div className="my-wrap">
           <div>
             <Route exact path="/" component={Home} />
@@ -40,7 +40,7 @@ export default class App extends React.Component{
           </div>
           <Footer />
         </div>
-    </BrowserRouter>
+    </HashRouter>
     )
   }
 }
